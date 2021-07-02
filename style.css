@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+  	font-family: sans-serif;
+	color: #212A2F;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 21px;
+	letter-spacing: 1.7px;
+}
+body{
+	width: 100%;
+	height: 100%;
+	background: #FFFFFF;
+
+}
+.header {
+	width: 100%;
+	height: 60px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2%;
+	flex-shrink: 0;
+}
+.header a {
+	font-family: sans-serif;
+	color: #212A2F;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 21px;
+	letter-spacing: 1.7px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+.sex  {
+	flex: 5;
+	display: flex;
+	flex-direction: row;
+}
+.sex a{
+	margin-left: 2%;
+}
+.sex a:first-child {
+	margin-left: 0;
+}
+.menu{
+	flex: 5;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+
+.menu .menu__item{
+	margin-right: 12px;
+	align-self: center;
+}
+.menu .menu__item:first-child {
+	margin-right: 12px;
+}
+.menu .menu__item:last-child  {
+  	margin-right: 0;
+}
+.logo{
+	flex: 1;
+	height: 33px;
+}
+.changeShop {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height:704px;
+	background-image: url(img/changeShop.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	
+}
+.changeShop h1 {
+	font-size: 48px;
+	font-weight: normal;
+	line-height: 63px;
+	text-align: center;
+	letter-spacing: 0.5px;
+	color: #ffff;
+	margin: auto 0 0
+}
+.changeShop p {
+	color: #ffff;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	margin: 0;
+	margin-top: 10px;
+}
+.changeButton {
+	display: flex;
+	height: 48px;
+	width: 385px;
+	margin-top: auto;
+	margin-bottom: 66px;
+	justify-content: space-between;
+} 
+.changeButton a {
+	text-decoration: none;
+	color: #212A2F;
+	display: inline-block;
+	width: 180px;
+	height: 100%;
+	background-color: #FFFFFF;
+	color: #212A2F;
+	text-align: center;
+	padding-top: 4%;
+}
+.changeButton a:hover {
+	color: #FFFFFF;
+	background-color: #212A2F;
+	text-decoration: none;
+}
+.secondPage {
+	height: 100%;
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 142px;
+}
+.secondPage h2 {
+	margin-top: 119px;
+	font-size: 32px;
+	line-height: 42px;
+}
+.tab1 {
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	width: 100%;
+	border-bottom: solid #D3D4D5 1px;
+
+}
+.tab1 a {
+	width: 123px;
+	font-size: 16px;
+	line-height: 24px;
+	text-decoration: none;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #212A2F;
+	
+}
+.tab1 a:hover {
+	color: #212A2F;
+	text-decoration: none;
+}
+.active {
+	border-bottom: solid black 2px;
+}
+.tab1 a:nth-child(2) {
+	margin: 0 20px;
+}
+.Favorites {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 21px;
+	height: 100%;
+	width: 80%;
+
+}
+.item {
+	width: 100%;
+	height: 100%;
+	display: block;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+.productFirst {
+	background-image: url(img/dasher.png);
+}
+.item  {
+	animation-delay: .25s;
+    animation: anmOne 0.7s ease forwards;
+}
+@keyframes anmOne {
+    from {
+        background-size: 115% 115%;
+    }
+    to {
+        background-size: 100% 100%;
+    }
+}
+.item:hover {
+	animation: anmTwo 0.7s ease forwards;
+}
+@keyframes anmTwo {
+    to {
+        background-size: 115% 115%;
+    }
+}
+.secret {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+	transition: all 250ms;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	overflow: hidden;
+	animation-delay: .25s;
+    animation: anmOne 0.7s ease forwards;
+}
+
+.secret a {
+	color: #212A2F;
+}
+.secret:hover {
+	opacity: 100;
+	background-color: rgba(34 34 33 / 70%);
+	animation: anmTwo 0.7s ease forwards;
+}
+
+.secret a:hover{
+	text-decoration: none;
+	color: #212A2F;
+}
+.productSecond {
+	background-image: url(img/treeRuner.png);
+}
+.productThree {
+	background-image: url(img/woolRuner.png);
+}
+.buttonFavorites {
+	height: 48px;
+	width: 69%;
+	text-align: center;
+	padding-top: 6%;
+	background-color: #ffff;
+	text-decoration: none;
+}
+.buttonFavorites:last-child {
+	margin-top: 12px;
+}
+.comments {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 84.8%;
+    margin: 15px auto;
+    border-bottom: solid #D3D4D5 1px;
+
+}
+.First, .Second, .Three {
+	width: 30%;
+	height: 396px;
+}
+.First h3  {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 22px;
+	line-height: 29px;
+	letter-spacing: 0.5px;
+}
+.First h4 {
+	height: 30px;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.4px;
+	margin: 0 auto;
+	border-bottom: none;
+	padding-left: 35px;
+	background-image: url(img/ItemComment.png);
+	background-repeat: no-repeat;
+	background-size: 30px 30px;
+}
+.Three h4{
+	background-image: url(img/cloud.png);
+}
+.colorful {
+	margin-bottom: 119px;
+}
+.colorful  h2 {
+	margin: 47px auto 0;
+}
+.colorful h3 {
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	margin: 18px auto 30px;
+}
+.colorful a{
+	background-color: #212A2F;
+	color: #ffff;
+}
+.colorful .changeButton {
+	margin-bottom: 0;	
+}
+.colorful a:hover{
+	background-color: #ffff;
+	color: #212A2F ;
+	border: solid 2px;
+}
+.scroll {
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: flex-start;
+}
+.scroll h2 {
+	margin: 0 0 25px 10%;
+}
+.model {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+.productFour {
+	background-image: url(img/scroll1.png);
+}
+.productFiven {
+	background-image: url(img/scroll2.png);
+}
+.productFour a,.productFiven a, .productSixen a {
+	height: 100%;
+	width:100%;
+	margin-top: 0;
+	
+}
+.productSixen {
+	background-image: url(img/scroll3.png);
+}
+.productFour .secret, .productFiven .secret, .productSixen .secret:hover{
+	background-color: transparent;
+}
